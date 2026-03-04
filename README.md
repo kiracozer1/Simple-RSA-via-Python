@@ -18,7 +18,8 @@ Projeyi bilgisayarınıza klonlayın veya `.py` dosyasını indirin:
 3. Şu komutu çalıştırın:
    ```bash
    python rsa_script.py
-   ⚠️ Önemli Not
+
+  ⚠️  Önemli Not
 Bu uygulama eğitim amaçlıdır. Gerçek dünya güvenliği için küçük asal sayılar (bu projede kullanılanlar gibi) yeterli değildir. Profesyonel projelerde cryptography gibi kütüphaneler ve en az 2048-bit anahtarlar kullanılmalıdır.
 
   📄 Lisans
