@@ -38,7 +38,7 @@ def rsaEncrypt(msg):
         d = pow(e, -1, nn)
         cipher_list=[]
         for i in msg:
-            i=ord(i)
+            i=ord(i)  #burada harfleri ASCII standartlarında karşılık gelen değere atar.
             c=(i**e)%n
             cipher_list.append(c)
         cipher_text="".join(str(c) for c in cipher_list)
@@ -57,4 +57,5 @@ if cipherList:
     # Deşifreleme fonksiyonuna şifreli listeyi ve anahtarları gönder
 decyrptedText = decrypt(cipherList, prvtKey, modul)
 print("3. Deşifre Edilen Mesaj:", decyrptedText)    
+
 
