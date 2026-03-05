@@ -16,8 +16,8 @@ def decrypt(cipher_list, d, n):
 
 def gcd(n1, n2):  #greatest common diviser
     r = n1 % n2
-    while r != 0:
-        n1 = n2
+    while r != 0:    #i wrote the gcd function  for learning purposes ,but you can use  math.gcd();
+        n1 = n2      #Öğrenmek için gcd fonksiyonunu yazdım, ama math.gcd() kullanabilirsiniz.
         n2 = r
         r = n1 % n2
         print("Döngü devam ediyor")
@@ -57,5 +57,6 @@ if cipherList:
     # Deşifreleme fonksiyonuna şifreli listeyi ve anahtarları gönder
 decyrptedText = decrypt(cipherList, prvtKey, modul)
 print("3. Deşifre Edilen Mesaj:", decyrptedText)    
+
 
 
